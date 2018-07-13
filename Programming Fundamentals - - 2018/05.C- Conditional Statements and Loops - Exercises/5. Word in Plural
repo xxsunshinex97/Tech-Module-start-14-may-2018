@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _5._5.WordInPlural
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string pluralNoun = Console.ReadLine();
+
+            bool nouns = pluralNoun.EndsWith("o") || pluralNoun.EndsWith("s")
+            || pluralNoun.EndsWith("x") || pluralNoun.EndsWith("z") || pluralNoun.EndsWith("ch")
+            || pluralNoun.EndsWith("sh");
+            //EndsWith проверява дали завършва на определена буква
+
+
+            if (pluralNoun.EndsWith("y"))
+            {
+                pluralNoun = pluralNoun.Remove(pluralNoun.Length - 1);
+                pluralNoun += "ies";
+            }
+            else if (nouns)
+            {
+                pluralNoun += "es";
+            }
+            else
+            {
+                pluralNoun += "s";
+            }
+
+            Console.WriteLine(pluralNoun);
+        }
+    }
+}
