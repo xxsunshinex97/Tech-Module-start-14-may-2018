@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _4._9.MultiplicationTable
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+            int times = 1;
+
+            while (times <= 10)
+            {
+                Console.WriteLine($"{n} X {times} = {n*times}");
+                times++;
+            }
+
+        }
+    }
+}
