@@ -1,0 +1,22 @@
+.outerLayer{
+    border: dotted blue 2px;
+    border-radius: 6px;
+    padding: 15px;
+    display: inline-block;
+}
+
+.middleLayer{
+    border: dashed red 2px;
+    border-radius: 6px;
+    padding: 15px;
+    display: inline-block;
+}
+
+.innerLayer{
+    border: solid green 2px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 24px;
+    padding: 15px;
+    display: inline-block;
+}
